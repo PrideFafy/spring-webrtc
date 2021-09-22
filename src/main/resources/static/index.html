@@ -1,0 +1,26 @@
+<html>
+
+<head>
+	<title>Video Conferencing</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+	<script type="text/javascript" src="vertxRTC.js"></script>
+</head>
+
+<body ng-app="vertxRTC" >
+	<h1>SFU Video Conferencing</h1>
+	
+	<div ng-controller="MainCtrl">
+		<div>
+			<video id="localVideo" muted/>
+			<video id="remoteVideo" />
+		</div>
+		<hr/>
+		<div>
+			<button ng-click="call()">Initiate Call</button>
+			<button ng-click="pickup()">Pickup call</button>
+		</div>
+		<hr/>
+		
+	</div>
+</body>
+</html>
